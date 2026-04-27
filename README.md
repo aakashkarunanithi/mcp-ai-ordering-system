@@ -56,12 +56,16 @@ LLM_API_KEY=
 uvicorn main:app --reload
 
 📂 Project Structure
+
 src/
- ├── tools/
- ├── resources/
- ├── database/
- ├── prompts/
- └── main.py
+ ├── agents/        # AI agents (order handling, status checking, etc.)
+ ├── models/        # Data models and schemas
+ ├── repositories/  # Database access layer
+ ├── routers/       # API endpoints and routing logic
+ ├── services/      # Business logic and orchestration
+ ├── utils/         # Utility functions and helpers
+ ├── main.py        # Application entry point
+ └── settings.py    # Configuration and environment variables
 
 🔐 Security
 - Sensitive configuration stored in .env
